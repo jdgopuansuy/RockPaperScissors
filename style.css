@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family: dancingScript;
+    src: url(fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'lobster';
+    src: url(fonts/LobsterTwo-Regular.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 10px 0 10px;
+    flex-direction: column;
+    background-color: rgb(17, 3, 138);
+}
+.game-container {
+    clip-path: ellipse(36% 40% at 50% 50%);
+    min-height: 725px;
+    min-width: 550px;
+    background-color: rgb(183, 180, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    clip-path: ellipse(36% 50% at 50% 50%);
+    background-color: rgb(226, 237, 108);
+    min-height: 550px;
+    min-width: 500px;
+    position: relative;
+}
+h3 {
+    font-family: 'dancingScript';
+    font-size: 25px;
+    position: relative;
+    margin-bottom: 0;
+    color: rgb(102, 11, 144);
+    text-shadow: 3px 5px 5px rgb(117, 125, 7);
+}
+.score {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+}
+.playerScore, .computerScore {
+    padding: 25px 25px 0 25px;
+    height: 140px;
+}
+p {
+    margin-top: 0;
+    font-size: 30px;
+}
+.playerScore img {
+    width: 100px;
+}
+.computerScore img {
+    width: 105px;
+}
+.move {
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(89, 92, 21);
+}
+.options {
+    padding: 10px 10px 25px 10px;
+    font-family: 'dancingScript';
+    text-shadow: 2px 3px 3px rgb(117, 120, 39);
+}
+span {
+    width: 100px;
+    padding: 10px;
+    margin: 0 5px 0 5px;
+    text-align: center;
+    background-color: rgb(162, 6, 6);
+    color:antiquewhite;
+    border-radius: 100px;
+    font-family: 'lobster';
+}
+span:hover {
+    background-color: rgb(20, 8, 155);
+    text-shadow: 3px 3px 3px antiquewhite;
+}
+.movesleft {
+    margin: 10px;
+    font-family: 'pacifico';
+    color: rgb(89, 92, 21);
+}
+/* Reload button style */
+.reload {
+    display: none;
+    padding: 10px;
+    background: rgb(20, 8, 155);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+    text-align: center;
+    font-family: 'lobster';
+    font-size: 20px;
+}
+.reload:hover {
+    background-color: rgb(183, 180, 36);
+}
+.result {
+    font-family: 'dancingScript';
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 2px 3px 3px rgb(117, 120, 39);
+    min-height: 28px;
+    padding: 2px;
+}
